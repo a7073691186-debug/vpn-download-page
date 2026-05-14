@@ -3,55 +3,53 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Скачать VPN-клиент</title>
+  <title>Скачать VPN</title>
   <style>
-    :root{--bg:#0f172a;--card:#111827;--line:#334155;--text:#e5e7eb;--muted:#94a3b8;--green:#22c55e;--blue:#3b82f6;--gray:#475569}
+    :root{--bg:#0f172a;--card:#111827;--line:#334155;--text:#e5e7eb;--muted:#94a3b8;--green:#22c55e;--blue:#3b82f6;--gray:#475569;--amber:#f59e0b}
     *{box-sizing:border-box} body{font-family:Inter,Arial,sans-serif;background:radial-gradient(circle at top,#1e293b,var(--bg));color:var(--text);margin:0;min-height:100vh;padding:24px}
-    .wrap{max-width:980px;margin:0 auto}.hero{text-align:center;margin:18px 0 26px}h1{margin:0 0 10px;font-size:34px}.muted{color:var(--muted);line-height:1.5}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:20px;box-shadow:0 18px 45px #0006}.card h2{margin:0 0 8px;font-size:22px}.btn{display:block;text-decoration:none;color:white;background:var(--green);padding:15px 16px;border-radius:14px;font-weight:800;text-align:center;margin:14px 0 10px}.btn.blue{background:var(--blue)}.btn.gray{background:var(--gray)}.note{background:#1e293b;border-radius:14px;padding:12px 14px;color:#cbd5e1;line-height:1.45;margin-top:12px}.steps{line-height:1.7;margin:10px 0 0;padding-left:22px}.footer{margin:18px 0;text-align:center;color:var(--muted);font-size:14px}.tag{display:inline-block;background:#064e3b;color:#bbf7d0;padding:4px 9px;border-radius:999px;font-size:12px;font-weight:700;margin-bottom:10px}@media(max-width:720px){.grid{grid-template-columns:1fr}h1{font-size:28px}}
+    .wrap{max-width:980px;margin:0 auto}.hero{text-align:center;margin:18px 0 26px}h1{margin:0 0 10px;font-size:34px}.muted{color:var(--muted);line-height:1.5}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:20px;box-shadow:0 18px 45px #0006}.card h2{margin:0 0 8px;font-size:22px}.btn{display:block;text-decoration:none;color:white;background:var(--green);padding:15px 16px;border-radius:14px;font-weight:800;text-align:center;margin:14px 0 10px}.btn.blue{background:var(--blue)}.btn.gray{background:var(--gray)}.note{background:#1e293b;border-radius:14px;padding:12px 14px;color:#cbd5e1;line-height:1.45;margin-top:12px}.steps{line-height:1.7;margin:10px 0 0;padding-left:22px}.footer{margin:18px 0;text-align:center;color:var(--muted);font-size:14px}.tag{display:inline-block;background:#064e3b;color:#bbf7d0;padding:4px 9px;border-radius:999px;font-size:12px;font-weight:700;margin-bottom:10px}.tag.alt{background:#78350f;color:#fde68a}@media(max-width:720px){.grid{grid-template-columns:1fr}h1{font-size:28px}}
   </style>
 </head>
 <body>
   <main class="wrap">
     <section class="hero">
-      <h1>Скачать VPN-клиент</h1>
-      <p class="muted">Выберите своё устройство. После установки импортируйте файл конфигурации, который прислал бот.</p>
+      <h1>Скачать VPN</h1>
+      <p class="muted">Простой способ: установите приложение WireGuard/WireSock и импортируйте файл <b>vpn.conf</b>, который прислал бот.</p>
     </section>
 
     <section class="grid">
       <div class="card">
         <span class="tag">Основной вариант</span>
         <h2>Windows</h2>
-        <p class="muted">Для основного файла <b>.conf</b> используйте AmneziaWG for Windows.</p>
-        <a class="btn" href="https://github.com/amnezia-vpn/amneziawg-windows-client/releases/download/2.0.0/amneziawg-amd64-2.0.0.msi">Скачать AmneziaWG для Windows 10/11 x64</a>
+        <p class="muted">Рекомендуем WireSock. Он импортирует обычный файл <b>vpn.conf</b>.</p>
+        <a class="btn" href="https://www.wiresock.net/wiresock-vpn-client/download-wireguard-vpn-client/">Скачать WireSock для Windows</a>
         <a class="btn gray" href="https://www.wireguard.com/install/">Запасной вариант: WireGuard</a>
-        <div class="note">Если .conf не виден при импорте — выберите “Все файлы”. Для WireGuard/WireSock берите файл с окончанием <b>-wireguard.conf</b>.</div>
+        <div class="note">Если файл не виден — сохраните <b>vpn.conf</b> на рабочий стол и в окне выбора включите <b>Все файлы (*.*)</b>.</div>
       </div>
 
       <div class="card">
         <span class="tag">Основной вариант</span>
         <h2>Android</h2>
-        <p class="muted">Для основного файла <b>.conf</b> используйте AmneziaWG. Можно поставить APK напрямую.</p>
-        <a class="btn" href="https://github.com/amnezia-vpn/amneziawg-android/releases/download/2.0.0/AmneziaWG.apk">Скачать AmneziaWG APK</a>
-        <a class="btn blue" href="https://play.google.com/store/apps/details?id=org.amnezia.vpn">AmneziaVPN в Google Play</a>
-        <div class="note">Если телефон предупреждает про APK — разрешите установку из браузера. Если используете WireGuard — импортируйте <b>-wireguard.conf</b>.</div>
+        <p class="muted">Установите WireGuard и импортируйте файл <b>vpn.conf</b> или QR.</p>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.wireguard.android">Скачать WireGuard в Google Play</a>
+        <a class="btn gray" href="https://download.wireguard.com/android-client/">APK WireGuard</a>
+        <div class="note">На телефоне проще всего открыть QR из сообщения бота.</div>
       </div>
 
       <div class="card">
-        <span class="tag">iPhone / iPad</span>
-        <h2>iPhone</h2>
-        <p class="muted">Для iOS используйте AmneziaWG из App Store и импортируйте основной <b>.conf</b> или QR.</p>
-        <a class="btn" href="https://apps.apple.com/us/app/amneziawg/id6478942365">Открыть AmneziaWG в App Store</a>
-        <a class="btn gray" href="https://apps.apple.com/us/app/wireguard/id1441195209">Запасной вариант: WireGuard iOS</a>
-        <div class="note">Если приложение недоступно в вашем регионе App Store — используйте WireGuard и файл <b>-wireguard.conf</b>.</div>
+        <span class="tag">Основной вариант</span>
+        <h2>iPhone / iPad</h2>
+        <p class="muted">Установите WireGuard из App Store и добавьте туннель через QR или файл.</p>
+        <a class="btn" href="https://apps.apple.com/us/app/wireguard/id1441195209">Скачать WireGuard для iOS</a>
+        <div class="note">Если файл не открывается напрямую — используйте импорт по QR.</div>
       </div>
 
       <div class="card">
-        <span class="tag">MacBook / macOS</span>
-        <h2>MacBook</h2>
-        <p class="muted">На macOS самый простой запасной путь — WireGuard + файл <b>-wireguard.conf</b>. Для Amnezia используйте официальный клиент.</p>
-        <a class="btn" href="https://github.com/amnezia-vpn/amnezia-client/releases/download/4.8.15.4/AmneziaVPN_4.8.15.4_macos.pkg">Скачать AmneziaVPN для macOS</a>
-        <a class="btn gray" href="https://apps.apple.com/us/app/wireguard/id1451685025?mt=12">Запасной вариант: WireGuard macOS</a>
-        <div class="note">Если AmneziaVPN просит ключ <b>vpn://</b>, используйте WireGuard и файл <b>-wireguard.conf</b>, который прислал бот.</div>
+        <span class="tag">Основной вариант</span>
+        <h2>MacBook / macOS</h2>
+        <p class="muted">Установите WireGuard и импортируйте файл <b>vpn.conf</b>.</p>
+        <a class="btn" href="https://apps.apple.com/us/app/wireguard/id1451685025?mt=12">Скачать WireGuard для macOS</a>
+        <div class="note">Если файл из Telegram получил расширение .txt — переименуйте обратно в <b>vpn.conf</b>.</div>
       </div>
     </section>
 
@@ -59,11 +57,19 @@
       <h2>Как подключить</h2>
       <ol class="steps">
         <li>Скачайте приложение для своего устройства.</li>
+        <li>Скачайте файл <b>vpn.conf</b> из Telegram.</li>
         <li>Откройте приложение и нажмите <b>+</b> / <b>Import from file</b>.</li>
-        <li>Выберите файл конфигурации из Telegram.</li>
-        <li>Включите VPN.</li>
+        <li>Выберите <b>vpn.conf</b> и включите VPN.</li>
       </ol>
-      <div class="note">Основной файл — для AmneziaWG. Файл с окончанием <b>-wireguard.conf</b> — для WireGuard/WireSock.</div>
+    </section>
+
+    <section class="card" style="margin-top:16px">
+      <span class="tag alt">Если обычный способ не работает</span>
+      <h2>Резервный режим AmneziaWG</h2>
+      <p class="muted">AmneziaWG лучше проходит блокировки, но сложнее в установке. Используйте его только если WireGuard/WireSock не подключается.</p>
+      <a class="btn gray" href="https://github.com/amnezia-vpn/amneziawg-windows-client/releases/download/2.0.0/amneziawg-amd64-2.0.0.msi">AmneziaWG для Windows</a>
+      <a class="btn gray" href="https://apps.apple.com/us/app/amneziawg/id6478942365">AmneziaWG для iPhone/iPad</a>
+      <div class="note">Для AmneziaWG нужен отдельный резервный файл <b>vpn-amneziawg.conf</b>. В обычном сценарии используйте <b>vpn.conf</b>.</div>
     </section>
 
     <p class="footer">Если что-то не получилось — напишите в поддержку в Telegram-боте.</p>

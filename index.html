@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Скачать VPN-клиент</title>
+  <style>
+    body{font-family:Inter,Arial,sans-serif;background:#0f172a;color:#e5e7eb;margin:0;display:flex;min-height:100vh;align-items:center;justify-content:center;padding:24px}
+    .card{max-width:560px;background:#111827;border:1px solid #334155;border-radius:24px;padding:28px;box-shadow:0 20px 60px #0008}
+    h1{margin:0 0 10px;font-size:30px}.muted{color:#94a3b8;line-height:1.5}.btn{display:block;text-decoration:none;color:white;background:#22c55e;padding:16px 18px;border-radius:14px;font-weight:700;text-align:center;margin:16px 0}.btn.secondary{background:#334155}.small{font-size:14px;color:#94a3b8}.steps{line-height:1.7}.warn{background:#1e293b;border-radius:14px;padding:12px 14px;color:#cbd5e1}
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>VPN-клиент для Windows</h1>
+    <p class="muted">Скачайте AmneziaWG, установите приложение и импортируйте файл конфигурации <b>.conf</b>, который прислал бот.</p>
+    <a class="btn" href="https://github.com/amnezia-vpn/amneziawg-windows-client/releases/download/2.0.0/amneziawg-amd64-2.0.0.msi">Скачать для Windows 10/11 x64</a>
+    <a class="btn secondary" href="https://www.wireguard.com/install/">Запасной вариант: WireGuard</a>
+    <div class="warn">Если Windows спрашивает разрешение — нажмите “Выполнить”. Если .conf не виден при импорте — выберите “Все файлы”.</div>
+    <ol class="steps">
+      <li>Установите AmneziaWG.</li>
+      <li>Откройте приложение.</li>
+      <li>Нажмите Import tunnel(s) from file.</li>
+      <li>Выберите файл .conf из Telegram.</li>
+      <li>Включите подключение.</li>
+    </ol>
+    <p class="small">Для Android/macOS используйте ссылку из бота на официальный сайт Amnezia. Для WireGuard используйте файл с окончанием <b>-wireguard.conf</b>.</p>
+  </main>
+</body>
+</html>
